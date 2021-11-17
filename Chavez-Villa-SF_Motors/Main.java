@@ -65,7 +65,8 @@ public class Main{
     System.out.println("Por favor verifica tus datos.");
     /*
       Utilizamos la clase para mostrar los datos
-      @return El nombre de la persona
+      @return
+      El nombre de la persona
       @return La edad de la persona
       @return La cuenta de la persona
       @return La direccion de la persona
@@ -77,6 +78,55 @@ public class Main{
     System.out.println("Cuenta: " + persona1.getCuenta());
     System.out.println("Direccion: " + persona1.getDireccion());
     System.out.println("Telefono: " + persona1.getTelefono() + "\n");
+
+    //utilizamos la clase Comprador y actualizamos los valores
+    System.out.print("Si deseas cambiar algo presiona 1.");
+    int z;
+    Scanner entrada6 = new Scanner(System.in);
+    z = entrada6.nextInt();
+    if (z == 1){
+      /*
+        Solicitamos datos al usuario
+      */
+      Scanner entrada7 = new Scanner(System.in);
+      System.out.print("Nombre completo: ");
+      n = entrada1.nextLine();
+      persona1.setNombre(n);
+
+      /*
+        Solicitamos datos al usuario
+      */
+      Scanner entrada8 = new Scanner(System.in);
+      System.out.print("Edad: ");
+      e = entrada2.nextInt();
+      persona1.setEdad(e);
+
+      /*
+        Solicitamos datos al usuario
+      */
+      Scanner entrada9 = new Scanner(System.in);
+      System.out.print("Cuenta bancaria: ");
+      c = entrada3.nextInt();
+      persona1.setCuenta(c);
+
+      /*
+        Solicitamos datos al usuario
+      */
+      Scanner entrada10 = new Scanner(System.in);
+      System.out.print("Direccion actual: ");
+      d = entrada4.nextLine();
+      persona1.setDireccion(d);
+
+      /*
+        Solicitamos datos al usuario
+      */
+      Scanner entrada11 = new Scanner(System.in);
+      System.out.print("Numero de telefono: ");
+      t = entrada5.nextInt();
+      persona1.setTelefono(t);
+    }
+
+    //System.out.println("\n");
 
     System.out.println("Gracias por realizar su compra");
   }
