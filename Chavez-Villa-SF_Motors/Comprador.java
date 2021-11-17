@@ -10,7 +10,7 @@ public class Comprador{
   //representa la edad del cliente
   private int edad;
   //representa la cuenta del cliente
-  private String cuenta;
+  private int cuenta;
   //representa la direccion del cliente
   private String direccion;
   //representa el telefono del Cliente
@@ -25,7 +25,7 @@ public class Comprador{
     @param cuenta Representación del la cuenta del cliente
     @param direccion Representación de la direccion del cliente
   */
-  public Comprador(String nombre, int edad, String cuenta, String direccion, int telefono){
+  public Comprador(String nombre, int edad, int cuenta, String direccion, int telefono){
     this.nombre = nombre;
     this.edad = edad;
     this.cuenta = cuenta;
@@ -37,7 +37,7 @@ public class Comprador{
   public Comprador(){
     nombre = "Desconocido";
     edad = 0;
-    cuenta = " ";
+    cuenta = 0;
     direccion = " ";
     telefono = 0;
   }
@@ -80,14 +80,14 @@ public class Comprador{
     Método que devuelve la cuenta del cliente
     @return La cuenta del cliente
   */
-  public String getCuenta(){
+  public int getCuenta(){
     return cuenta;
   }
   /*
     Método que cambia la cuenta del cliente
     @param cuenta El nuevo valor de cuenta
   */
-  public void setCuenta(String cuenta){
+  public void setCuenta(int cuenta){
     this.cuenta = cuenta;
   }
 
